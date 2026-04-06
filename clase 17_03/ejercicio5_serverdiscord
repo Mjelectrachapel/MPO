@@ -1,0 +1,10 @@
+rol= input("¿Qué rol tienes?").strip().lower()
+academia= input("¿A qué academia perteneces?").strip().lower()
+
+
+if  academia=="prometeo" and rol=="alumno" :
+  print("¡Bienvenid@ al discord oficial de Prometeo! Se te ha añadido también al discord de alumnos ^^ ")
+elif rol=="profesor"and academia=="prometeo":
+  print("¡Bienvenid@ al discord oficial de Prometeo!")
+else:
+  print("No tienes acceso al servidor de Discord")
