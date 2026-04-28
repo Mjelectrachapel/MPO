@@ -1,6 +1,6 @@
 """
 Escribe un programa que pida al usuario dos listas de números enteros separados por comas
- y sume los elementos de ambas listas. El programa debe imprimir la lista resultante. 
+ y sume los elementos de ambas listas. El programa debe imprimir la lista resultante.
 Si las listas no tienen la misma longitud, el programa debe imprimir un mensaje de error.
 """
 numeros1 = input("Introduce una serie de números separados por ,: ")
@@ -13,3 +13,4 @@ if len(lista1)!=len(lista2):
 else:
     lista_suma=[x+y for x,y in zip(lista1,lista2)]
     print(f"La suma de los elementos de ambas listas es: {lista_suma}")
+#zip crea duplas de elementos por ej: [(elementolista1.1,elementolista2.1),(elementolista1.2,elementolista2.2)
