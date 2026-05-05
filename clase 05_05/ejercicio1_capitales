@@ -1,0 +1,26 @@
+'''
+Escribe un programa que almacene en un diccionario las capitales de varios países,
+se introducirán los datos con la forma PAIS-CAPITAL.
+Esto debe ejecutarse indefinidamente hasta que el usuario introduzca "FIN INSERCIONES".
+El programa debe permitir al usuario consultar la capital de un país introduciendo su nombre.
+Si el país no está en el diccionario, el programa debe informar al usuario.
+ '''
+
+diccionario_capitales = {}
+entrada= input("Introduzca un par PAIS-CAPITAL o FIN INSERCIONES: ")
+
+while entrada != "FIN INSERCIONES":
+  pais, capital = entrada.split("-")
+  diccionario_capitales[pais] = capital
+  entrada= input("Introduzca un par PAIS-CAPITAL o FIN INSERCIONES: ")
+
+consulta_pais=input("Introduzca un país del que quiera conocer la capital o SALIR: ")
+
+while consulta_pais != "SALIR":
+    # Si existe la entrada imprimir capital
+    # sino imprimir no existe en el diccionario
+    if consulta_pais in diccionario_capitales:
+        print(f"La capital de {consulta_pais} es {diccionario_capitales[consulta_pais]}")
+    else:
+        print(f"La entrada {consulta_pais} no existe en el diccionario")
+    consulta_pais = input("Introduce un país para consultar su capital o SALIR: ")
