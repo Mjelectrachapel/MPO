@@ -1,0 +1,41 @@
+inventario = {
+    "paracetamoles" : 4,
+    "ibuprofenos" : 5,
+    "almax" : 1
+}
+
+while True:
+    print("""
+INVENTARIO
+
+1- Añadir producto
+2- Eliminar producto
+3- Consultar producto
+4- Salir
+""")
+    opcion = int(input("Escoge una opcion\n"))
+    if opcion == 1:
+        nombre = input("Introduce el producto\n")
+        cantidad = int(input("Introduce la cantidad\n"))
+        if nombre in inventario:
+            inventario[nombre] += cantidad
+        else:
+            inventario[nombre] = cantidad
+    elif opcion == 2:
+        nombre = input("Introduce el producto\n")
+        if nombre in inventario:
+            cantidad = inventario.pop(nombre)
+            print(f"Se han eliminado {cantidad} objetos de {nombre}")
+        else:
+            print(f"La entrada {nombre} no existe en el diccionario")
+    elif opcion == 3:
+        nombre = input("Introduce el producto\n")
+        if nombre in inventario:
+            print(f"El producto {nombre} tiene {inventario[nombre]} unidades")
+        else:
+            print(f"La entrada {nombre} no existe en el diccionario")
+    elif opcion == 4:
+        print("Adios")
+        break
+    else:
+        print("Escoge una opcion entre 1 y 4")
