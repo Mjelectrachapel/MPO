@@ -1,0 +1,101 @@
+[   {
+    "pregunta": "¿Quién es el capitán de los Piratas de Sombrero de Paja?",
+    "opciones": [
+        "A) Roronoa Zoro",
+        "B) Monkey D. Luffy",
+        "C) Sanji",
+        "D) Trafalgar Law"],
+    "respuesta_correcta": "B"
+  },
+
+  {
+    "pregunta": "¿Cuál es el objetivo principal de Sanji durante el arco de Whole Cake Island?",
+    "opciones": [
+      "A) Derrotar a Kaido",
+      "B) Encontrar el One Piece",
+      "C) Casarse con Pudding por obligación de su familia",
+      "D) Convertirse en Shichibukai"
+    ],
+    "respuesta_correcta": "C"
+  },
+  {
+    "pregunta": "¿Qué fruta del diablo comió Luffy?",
+    "opciones": [
+      "A) Mera Mera no Mi",
+      "B) Gomu Gomu no Mi",
+      "C) Hito Hito no Mi",
+      "D) Bara Bara no Mi"
+    ],
+    "respuesta_correcta": "B"
+  },
+  {
+    "pregunta": "¿Cuál es el sueño de Roronoa Zoro?",
+    "opciones": [
+      "A) Ser el Rey de los Piratas",
+      "B) Encontrar el All Blue",
+      "C) Convertirse en el mejor espadachín del mundo",
+      "D) Dibujar un mapa del mundo"
+    ],
+    "respuesta_correcta": "C"
+  },
+  {
+    "pregunta": "¿Quién es la navegante de los Sombrero de Paja?",
+    "opciones": [
+      "A) Robin",
+      "B) Nami",
+      "C) Vivi",
+      "D) Perona"
+    ],
+    "respuesta_correcta": "B"
+  },
+  {
+    "pregunta": "¿En qué isla se une Chopper a la tripulación?",
+    "opciones": [
+      "A) Arabasta",
+      "B) Drum",
+      "C) Water 7",
+      "D) Skypiea"
+    ],
+    "respuesta_correcta": "B"
+  },
+  {
+    "pregunta": "¿Qué miembro de la tripulación es arqueóloga?",
+    "opciones": [
+      "A) Nami",
+      "B) Nico Robin",
+      "C) Boa Hancock",
+      "D) Charlotte Pudding"
+    ],
+    "respuesta_correcta": "B"
+  },
+  {
+    "pregunta": "¿Contra qué organización se enfrentan los Sombrero de Paja en Enies Lobby?",
+    "opciones": [
+      "A) CP9",
+      "B) Baroque Works",
+      "C) La Marina Científica",
+      "D) Los Piratas de Big Mom"
+    ],
+    "respuesta_correcta": "A"
+  },
+  {
+    "pregunta": "¿Qué personaje es conocido como el cocinero de los Sombrero de Paja?",
+    "opciones": [
+      "A) Usopp",
+      "B) Franky",
+      "C) Sanji",
+      "D) Brook"
+    ],
+    "respuesta_correcta": "C"
+  },
+  {
+    "pregunta": "¿Quién es la emperatriz pirata que gobierna Whole Cake Island?",
+    "opciones": [
+      "A) Boa Hancock",
+      "B) Big Mom",
+      "C) Nico Robin",
+      "D) Nefertari Vivi"
+    ],
+    "respuesta_correcta": "B"
+  }
+]
