@@ -1,7 +1,3 @@
-def mostrar_menu():
-    print("--------MENÚ--------")
-    print("1. Comenzar cuestionario")
-    print("2. Salir")
 
 def cargar_preguntas():
     from pathlib import Path
