@@ -1,0 +1,102 @@
+[
+  {
+    "pregunta": "¿Quién era el dios del trueno en la mitología griega?",
+    "opciones": [
+      "A) Poseidón",
+      "B) Zeus",
+      "C) Hades",
+      "D) Apolo"
+    ],
+    "respuesta_correcta": "B"
+  },
+  {
+    "pregunta": "¿Qué dios griego gobernaba el mar?",
+    "opciones": [
+      "A) Ares",
+      "B) Hermes",
+      "C) Poseidón",
+      "D) Hefesto"
+    ],
+    "respuesta_correcta": "C"
+  },
+  {
+    "pregunta": "¿Quién era la diosa griega de la sabiduría?",
+    "opciones": [
+      "A) Atenea",
+      "B) Afrodita",
+      "C) Hera",
+      "D) Artemisa"
+    ],
+    "respuesta_correcta": "A"
+  },
+  {
+    "pregunta": "¿Cómo se llamaba el dios del inframundo en la mitología griega?",
+    "opciones": [
+      "A) Dionisio",
+      "B) Hades",
+      "C) Apolo",
+      "D) Hermes"
+    ],
+    "respuesta_correcta": "B"
+  },
+  {
+    "pregunta": "¿Qué criatura mitológica tenía cuerpo de hombre y cabeza de toro?",
+    "opciones": [
+      "A) Centauro",
+      "B) Cíclope",
+      "C) Minotauro",
+      "D) Medusa"
+    ],
+    "respuesta_correcta": "C"
+  },
+  {
+    "pregunta": "¿Quién mató al Minotauro según la mitología griega?",
+    "opciones": [
+      "A) Perseo",
+      "B) Teseo",
+      "C) Hércules",
+      "D) Aquiles"
+    ],
+    "respuesta_correcta": "B"
+  },
+  {
+    "pregunta": "¿Qué héroe griego realizó los doce trabajos?",
+    "opciones": [
+      "A) Hércules",
+      "B) Ulises",
+      "C) Jasón",
+      "D) Orfeo"
+    ],
+    "respuesta_correcta": "A"
+  },
+  {
+    "pregunta": "¿Quién era el dios principal en la mitología nórdica?",
+    "opciones": [
+      "A) Thor",
+      "B) Loki",
+      "C) Odín",
+      "D) Freyr"
+    ],
+    "respuesta_correcta": "C"
+  },
+  {
+    "pregunta": "¿Qué dios nórdico era conocido por llevar un martillo llamado Mjolnir?",
+    "opciones": [
+      "A) Thor",
+      "B) Loki",
+      "C) Balder",
+      "D) Tyr"
+    ],
+    "respuesta_correcta": "A"
+  },
+  {
+    "pregunta": "¿Qué personaje de la mitología griega convirtió en piedra a quienes la miraban directamente?",
+    "opciones": [
+      "A) Circe",
+      "B) Medusa",
+      "C) Pandora",
+      "D) Helena"
+    ],
+    "respuesta_correcta": "B"
+  }
+]

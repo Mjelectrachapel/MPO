@@ -1,9 +1,29 @@
 
-def cargar_preguntas():
+def elegir_tema():
+    print("--------TEMAS--------")
+    print("1. One Piece")
+    print("2. Mitología")
+    print("3. Juego de Tronos")
+
+    opcion = input("Elige un tema: ")
+
+    while opcion not in ("1", "2", "3"):
+        print("Opción no válida")
+        opcion = input("Elige un tema: ")
+
+    if opcion == "1":
+        return "preguntas_one_piece.json"
+    elif opcion == "2":
+        return "preguntas_mitologia.json"
+    elif opcion == "3":
+        return "preguntas_got.json"
+    
+    
+def cargar_preguntas(nombre_archivo):
     from pathlib import Path
     import json
 
-    ruta = Path(__file__).parent / "preguntas.json"
+    ruta = Path(__file__).parent / nombre_archivo
 
     with open(ruta, "r", encoding="utf-8") as archivo:
         preguntas = json.load(archivo)
@@ -44,3 +64,28 @@ def mostrar_resultados(aciertos,total):
         print("Repasa y vuelve a intentarlo")
     print("------------------------------")
     
+def actualizar_ranking(nombre,puntuacion):
+    import json
+    from pathlib import Path
+
+    ruta = Path(__file__).parent / "ranking.json"
+
+    with open(ruta, "r", encoding="utf-8") as archivo:
+        ranking = json.load(archivo)
+
+        ranking[nombre] = puntuacion
+
+    with open(ruta, "w", encoding="utf-8") as archivo:
+        json.dump(ranking, archivo, indent=4, ensure_ascii=False)
+
+def consultar_ranking():
+    import json
+    from pathlib import Path
+
+    ruta = Path(__file__).parent / "ranking.json"
+
+    with open(ruta, "r", encoding="utf-8") as archivo:
+        ranking = json.load(archivo)
+
+    return ranking
+        

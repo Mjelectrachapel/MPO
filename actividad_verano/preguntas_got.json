@@ -1,0 +1,102 @@
+[
+  {
+    "pregunta": "¿Cuál es el lema de la Casa Stark?",
+    "opciones": [
+      "A) Se acerca el invierno",
+      "B) Oye mi rugido",
+      "C) Fuego y sangre",
+      "D) Crecer fuerte"
+    ],
+    "respuesta_correcta": "A"
+  },
+  {
+    "pregunta": "¿Quién es conocido como el Rey en el Norte?",
+    "opciones": [
+      "A) Jaime Lannister",
+      "B) Jon Snow",
+      "C) Tyrion Lannister",
+      "D) Theon Greyjoy"
+    ],
+    "respuesta_correcta": "B"
+  },
+  {
+    "pregunta": "¿A qué casa pertenece Daenerys?",
+    "opciones": [
+      "A) Casa Stark",
+      "B) Casa Baratheon",
+      "C) Casa Targaryen",
+      "D) Casa Tyrell"
+    ],
+    "respuesta_correcta": "C"
+  },
+  {
+    "pregunta": "¿Cómo se llama la espada de Jon Snow?",
+    "opciones": [
+      "A) Aguja",
+      "B) Garra",
+      "C) Hielo",
+      "D) Cumplidora de promesas"
+    ],
+    "respuesta_correcta": "B"
+  },
+  {
+    "pregunta": "¿Quién es el hermano menor de Cersei y Jaime Lannister?",
+    "opciones": [
+      "A) Joffrey",
+      "B) Tyrion",
+      "C) Robb",
+      "D) Bran"
+    ],
+    "respuesta_correcta": "B"
+  },
+  {
+    "pregunta": "¿Qué personaje tiene una lista de personas a las que quiere vengarse?",
+    "opciones": [
+      "A) Sansa Stark",
+      "B) Arya Stark",
+      "C) Brienne de Tarth",
+      "D) Catelyn Stark"
+    ],
+    "respuesta_correcta": "B"
+  },
+  {
+    "pregunta": "¿Cuál es el nombre de uno de los dragones de Daenerys?",
+    "opciones": [
+      "A) Drogon",
+      "B) Fantasma",
+      "C) Nymeria",
+      "D) Verano"
+    ],
+    "respuesta_correcta": "A"
+  },
+  {
+    "pregunta": "¿Qué familia gobierna Desembarco del Rey al comienzo de la serie?",
+    "opciones": [
+      "A) Casa Stark",
+      "B) Casa Greyjoy",
+      "C) Casa Baratheon",
+      "D) Casa Martell"
+    ],
+    "respuesta_correcta": "C"
+  },
+  {
+    "pregunta": "¿Quién empuja a Bran Stark desde una torre en la primera temporada?",
+    "opciones": [
+      "A) Jaime Lannister",
+      "B) Sandor Clegane",
+      "C) Joffrey Baratheon",
+      "D) Petyr Baelish"
+    ],
+    "respuesta_correcta": "A"
+  },
+  {
+    "pregunta": "¿Qué personaje es conocido como la Madre de Dragones?",
+    "opciones": [
+      "A) Cersei Lannister",
+      "B) Margaery Tyrell",
+      "C) Daenerys Targaryen",
+      "D) Melisandre"
+    ],
+    "respuesta_correcta": "C"
+  }
+]
