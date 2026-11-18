@@ -14,7 +14,7 @@ def mostrar_menu():
     print("6. Mostrar información")
     print("7. Salir")
     print("8. Subir al directorio padre")
-    print("9.Renombrar archivo o directorio")
+    print("9. Renombrar archivo o directorio")
 
 
 def listar_contenido():
