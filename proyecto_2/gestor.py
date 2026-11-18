@@ -3,6 +3,7 @@ import os
 import datetime
 
 def mostrar_menu():
+    """Muestra las opciones del menú y la ruta actual"""
     print("\n=== GESTOR DE ARCHIVOS ===")
     print("Ruta actual:", os.getcwd())
     print("1. Listar contenido")
@@ -15,6 +16,7 @@ def mostrar_menu():
 
 
 def listar_contenido():
+    """Lista el contenido indicando si es archivo o carpeta"""
     elementos = os.listdir(".")
     for elemento in elementos:
         if os.path.isdir(elemento):
@@ -24,6 +26,7 @@ def listar_contenido():
 
 
 def crear_directorio():
+    """Pide un nombre y crea una carpeta nueva"""
     nombre = input("Nombre del nuevo directorio: ")
     if nombre.strip() == "":
         print("Error: el nombre no puede estar vacío.")
@@ -40,6 +43,7 @@ def crear_directorio():
 
 
 def crear_archivo():
+    """Crea un archivo de texto con un contenido inicial"""
     nombre = input("Nombre del archivo: ")
     if nombre.strip() == "":
         print("Error: el nombre no puede estar vacío.")
@@ -59,13 +63,14 @@ def crear_archivo():
 
 
 def escribir_en_archivo():
+    """Añade texto al final de un archivo existente"""
     nombre = input("Nombre del archivo: ")
     if nombre.strip() == "":
         print("Error: el nombre no puede estar vacío.")
         return
     try:
         if not os.path.isfile(nombre):
-            print("Error: no existe ningun archivo con ese nombre.")
+            print("Error: no existe ningún archivo con ese nombre.")
         else:
             texto = input("Texto a añadir: ")
             with open(nombre, "a") as archivo:
@@ -78,13 +83,14 @@ def escribir_en_archivo():
 
 
 def eliminar_elemento():
+    """Elimina un archivo o un directorio vacío"""
     nombre = input("Nombre del archivo o directorio a eliminar: ")
     if nombre.strip() == "":
         print("Error: el nombre no puede estar vacío.")
         return
     try:
         if not os.path.exists(nombre):
-            print("Error: no existe ningun archivo o directorio con ese nombre")
+            print("Error: no existe ningún archivo o directorio con ese nombre")
         elif os.path.isfile(nombre):
             os.remove(nombre)
             print(f"Archivo eliminado: {nombre}")
@@ -98,12 +104,13 @@ def eliminar_elemento():
 
 
 def mostrar_informacion():
+    """Muestra tipo, tamaño y fecha de modificación"""
     nombre = input("Nombre del archivo o directorio: ")
     if nombre.strip() == "":
         print("Error: el nombre no puede estar vacío.")
         return
     if not os.path.exists(nombre):
-        print(f"Error: no existe ningun archivo o directorio llamado {nombre}.")
+        print(f"Error: no existe ningún archivo o directorio llamado {nombre}.")
     else:
         if os.path.isfile(nombre):
             tipo = "Archivo"
@@ -120,6 +127,7 @@ def mostrar_informacion():
 
 
 def main():
+    """Ejecuta el bucle principal del menú"""
     while True:
         mostrar_menu()
         opcion = input("Elige una opción: ")
