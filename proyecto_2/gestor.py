@@ -1,6 +1,17 @@
 """Proyecto 2: Gestor de archivos en consola."""
 import os
 import datetime
+try:
+    from colorama import Fore, init
+    init(autoreset=True)
+except ImportError:
+    # Si colorama no está instalado, los colores quedan vacíos y el programa sigue funcionando
+    class Fore:
+        BLUE = ""
+        GREEN = ""
+        RED = ""
+        YELLOW = ""
+
 
 def mostrar_menu():
     """Muestra las opciones del menú y la ruta actual"""
@@ -22,9 +33,9 @@ def listar_contenido():
     elementos = os.listdir(".")
     for elemento in elementos:
         if os.path.isdir(elemento):
-            print(f"[CARPETA] {elemento}")
+            print(Fore.BLUE + f"[CARPETA] {elemento}")
         else:
-            print(f"[ARCHIVO] {elemento}")
+            print(Fore.GREEN + f"[ARCHIVO] {elemento}")
 
 
 def crear_directorio():
