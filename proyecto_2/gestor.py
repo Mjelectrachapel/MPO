@@ -30,6 +30,7 @@ def listar_contenido():
 def crear_directorio():
     """Pide un nombre y crea una carpeta nueva"""
     nombre = input("Nombre del nuevo directorio: ")
+        # Evita nombres vacíos o formados solo por espacios
     if nombre.strip() == "":
         print("Error: el nombre no puede estar vacío.")
         return
@@ -51,6 +52,7 @@ def crear_archivo():
         print("Error: el nombre no puede estar vacío.")
         return
     try:
+        # Se comprueba antes porque el modo "w" vaciaría un archivo ya existente
         if os.path.exists(nombre):
             print("Error: ya existe un archivo con ese nombre")
         else:
@@ -75,6 +77,7 @@ def escribir_en_archivo():
             print("Error: no existe ningún archivo con ese nombre.")
         else:
             texto = input("Texto a añadir: ")
+            # Modo "a" (append): añade al final sin borrar lo que había
             with open(nombre, "a") as archivo:
                 archivo.write(texto + "\n")
             print(f"Texto añadido al archivo: {nombre}")
@@ -97,6 +100,7 @@ def eliminar_elemento():
             os.remove(nombre)
             print(f"Archivo eliminado: {nombre}")
         else:
+           # os.rmdir solo borra directorios vacíos; si no, salta OSError
             os.rmdir(nombre)
             print(f"Directorio eliminado: {nombre}")
     except PermissionError:
@@ -119,6 +123,7 @@ def mostrar_informacion():
         else:
             tipo = "Carpeta"
         tamanio = os.path.getsize(nombre)
+        # getmtime devuelve segundos desde 1970; se convierte a fecha legible
         segundos = os.path.getmtime(nombre)
         fecha = datetime.datetime.fromtimestamp(segundos)
 
@@ -130,6 +135,7 @@ def mostrar_informacion():
 
 def ir_a_directorio_padre():
     """Sube al directorio padre del directorio actual"""
+     # ".." significa "la carpeta de arriba"
     os.chdir("..")
     print("Ahora estás en:", os.getcwd())
 
@@ -147,6 +153,7 @@ def renombrar_elemento():
     try:
         if not os.path.exists(antiguo):
             print("Error: no existe ningún archivo o directorio con ese nombre")
+        # Se comprueba que el nombre nuevo no exista para no sobrescribir nada
         elif os.path.exists(nuevo):
             print("Error: ya existe un archivo o directorio con ese nombre")
         else:
@@ -160,6 +167,7 @@ def renombrar_elemento():
 
 def main():
     """Ejecuta el bucle principal del menú"""
+        # Bucle principal: se repite hasta que el usuario elige salir (opción 7)
     while True:
         mostrar_menu()
         opcion = input("Elige una opción: ")
