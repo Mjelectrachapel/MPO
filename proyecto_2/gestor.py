@@ -13,6 +13,8 @@ def mostrar_menu():
     print("5. Eliminar archivo o directorio")
     print("6. Mostrar información")
     print("7. Salir")
+    print("8. Subir al directorio padre")
+    print("9.Renombrar archivo o directorio")
 
 
 def listar_contenido():
@@ -126,6 +128,36 @@ def mostrar_informacion():
         print(f"Última modificación: {fecha.strftime('%d/%m/%Y %H:%M:%S')}")
 
 
+def ir_a_directorio_padre():
+    """Sube al directorio padre del directorio actual"""
+    os.chdir("..")
+    print("Ahora estás en:", os.getcwd())
+
+
+def renombrar_elemento():
+    """Cambia el nombre de un archivo o directorio"""
+    antiguo = input("Nombre actual: ")
+    if antiguo.strip() == "":
+        print("Error: el nombre no puede estar vacío.")
+        return
+    nuevo = input("Nombre nuevo: ")
+    if nuevo.strip() == "":
+        print("Error: el nuevo nombre no puede estar vacío.")
+        return
+    try:
+        if not os.path.exists(antiguo):
+            print("Error: no existe ningún archivo o directorio con ese nombre")
+        elif os.path.exists(nuevo):
+            print("Error: ya existe un archivo o directorio con ese nombre")
+        else:
+            os.rename(antiguo, nuevo)
+            print(f"Renombrado: {antiguo} -> {nuevo}")
+    except PermissionError:
+        print("Error: no tienes permisos para cambiar el nombre.")
+    except OSError as error:
+        print(f"Error: no se pudo cambiar el nombre del elemento seleccionado ({error})")
+
+
 def main():
     """Ejecuta el bucle principal del menú"""
     while True:
@@ -147,6 +179,10 @@ def main():
         elif opcion == "7":
             print("¡Hasta luego!")
             break
+        elif opcion == "8":
+            ir_a_directorio_padre()
+        elif opcion == "9":
+            renombrar_elemento()
         else:
             print("Opción no válida")
 
